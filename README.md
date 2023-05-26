@@ -9,4 +9,4 @@ All animations were inspired and implemented by CodePen.
 - 3D Card
 
 ## 3D Card[](#3d-card)
-<img align="center" src="../screenshot/3D_Card/screenshot.jpg" alt="3D Card" style="width:100%;height:100%"/>
+<img align="center" src="/screenshot/3D_Card/screenshot.jpg" alt="3D Card" style="width:100%;height:100%"/>
