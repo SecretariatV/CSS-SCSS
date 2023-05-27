@@ -90,7 +90,6 @@ document.onpointerdown = function (e) {
 
 document.onmousewheel = function (e) {
   e = e || window.event;
-  console.log(e.wheelDelta, e.detail);
   var d = e.wheelDelta / 20 || -e.detail;
   radius += d;
   init(1);
