@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", "sans-serif";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f4f4f4;
+  perspective: 1000px;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  transform-style: preserve-3d;
+  background: linear-gradient(
+    to left,
+    rgba(245, 70, 66, 0.75),
+    rgba(8, 83, 156, 0.75)
+  );
+  margin: 5rem;
+  width: 600px;
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 0 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.gradient {
+  border-radius: 50%;
+  background: linear-gradient(
+    to right,
+    rgba(245, 70, 66, 0.75),
+    rgba(8, 83, 156, 0.75)
+  );
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+img {
+  width: 350px;
+  position: relative;
+  top: 20px;
+  left: -20px;
+  transition: all 0.75s;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 2rem;
+  transition: all 0.75s;
+}
+
+p {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  line-height: 2rem;
+  color: #555;
+  font-weight: bold;
+  transition: all 0.75s;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  transition: all 0.75s;
+}
+
+.btn-container button {
+  border: 0;
+  border-radius: 50px;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  color: black;
+  padding: 3px 1.7rem;
+  cursor: pointer;
+}
+
+.btn-container button:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.btn-container button.active {
+  background-color: #555;
+  color: #fff;
+}
+
+.purchase-btn {
+  border: 0;
+  border-radius: 30px;
+  margin-top: 3.5rem;
+  color: #fff;
+  background-color: #f54642;
+  padding: 12px;
+  transition: all 0.75s;
+  cursor: pointer;
+}
