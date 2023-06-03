@@ -11,6 +11,8 @@ All animations were inspired and implemented by CodePen.
     - [Mouse Event Effect](#mouse-event-effect)
   - [3D Card Effect](#3d-card-effect)
     - [Add mouse event listener](#add-mouse-event-listener)
+  - [3D Image Hover](#3d-image-hover)
+    - [Animation](#animation)
 
 ## Table of contents[](#table-of-contents)
 - 3D Card
@@ -99,11 +101,10 @@ document.onpointerdown = function (e) {
 ```
 
 ## 3D Card Effect[](#3d-card-effect)
-
-### Add mouse event listener
 <img align="center" src="/screenshot/3D_Card_Effect/3D_Card_Effect.jpg" alt="3D Card Effect" style="width:100%;height:100%"/>
 This project is a project that shows a 3D card using mouse events.
 
+### Add mouse event listener
 ```
 container.addEventListener("mousemove", (e) => {
   let X = (window.innerWidth / 2 - e.pageX) / 30;
@@ -112,4 +113,31 @@ container.addEventListener("mousemove", (e) => {
   card.style.transition = "none";
   card.style.transform = `rotateX(${X}deg) rotateY(${Y}deg)`;
 });
+```
+
+## 3D Image Hover[](#3d-image-hover)
+<img align="center" src="/screenshot/3D_Image_Hover/3DImageHover.jpg" alt="3D Image Hover" style="width:100%;height:100%"/>
+This project implemented multiple sliders animation using CSS.
+
+### Animation
+```
+.container:hover img:nth-child(4) {
+  transform: translate(160px, -160px);
+  opacity: 1;
+}
+
+.container:hover img:nth-child(3) {
+  transform: translate(120px, -120px);
+  opacity: 0.8;
+}
+
+.container:hover img:nth-child(2) {
+  transform: translate(80px, -80px);
+  opacity: 0.6;
+}
+
+.container:hover img:nth-child(1) {
+  transform: translate(40px, -40px);
+  opacity: 0.4;
+}
 ```
