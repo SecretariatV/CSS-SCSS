@@ -13,6 +13,9 @@ All animations were inspired and implemented by CodePen.
     - [Add mouse event listener](#add-mouse-event-listener)
   - [3D Image Hover](#3d-image-hover)
     - [Animation](#animation)
+  - [3D Thumb Image Effect](#3d-thumb-image-effect)
+    - [Book Effect](#book-effect)
+    - [Shadow Effect](#shadow-effect)
 
 ## Table of contents[](#table-of-contents)
 - 3D Card
@@ -139,5 +142,49 @@ This project implemented multiple sliders animation using CSS.
 .container:hover img:nth-child(1) {
   transform: translate(40px, -40px);
   opacity: 0.4;
+}
+```
+
+## 3D Thumb Image Effect[](#3d-thumb-image-effect)
+<img align="center" src="/screenshot/3D_Thumb_Image_Animation/Screenshot.jpg" alt="3D Thumb Effect" style="width:100%;height:100%"/>
+
+### Book Effect
+```
+.thumb a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 36px;
+  background: inherit;
+  background-size: cover, cover;
+  background-position: bottom;
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+}
+```
+
+### Shadow Effect
+```
+.thumb a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+  opacity: 0.15;
+  transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+  transform-origin: bottom;
+}
+
+.thumb:hover a:before {
+  opacity: 1;
+  box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+  transform: rotateX(0) translateZ(-60px) scale(0.85);
 }
 ```
