@@ -9,6 +9,9 @@ All animations were inspired and implemented by CodePen.
     - [Start Effect](#start-effect)
     - [Image 3D Effect](#image-3d-effect)
     - [Mouse Event Effect](#mouse-event-effect)
+  - [3D Card Hover](#3d-card-hover)
+    - [Caption Animation](#caption-animation)
+    - [Image Effect](#image-effect)
   - [3D Card Effect](#3d-card-effect)
     - [Add mouse event listener](#add-mouse-event-listener)
   - [3D Image Hover](#3d-image-hover)
@@ -101,6 +104,52 @@ document.onpointerdown = function (e) {
 
   return false;
 };
+```
+
+## 3D Card Hover[](#3d-card-hover)
+<img align="center" src="/screenshot/3D_Card_Hover/Screenshot.jpg" alt="3D Card Hover" style="width:100%;height:100%"/>
+This project shows 3D animation using characters.
+
+### Caption Animation
+```
+figcaption {
+  grid-area: 1/1;
+  width: calc(100% + 40px);
+  font-family: Exoct;
+  color: white;
+  font-size: min(32px, 5vmin);
+  text-align: center;
+  place-self: end center;
+  transform: perspective(500px) translateY(100%) rotateX(-90deg);
+  backface-visibility: hidden;
+  transform-origin: top;
+  background: #000;
+  transition: 0.5s;
+}
+```
+
+### Image Effect 
+```
+figure {
+  width: 100%;
+  aspect-ratio: 1;
+  margin: 0 0 60px;
+  padding: 5px 20px 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 100%;
+  cursor: pointer;
+  position: relative;
+  filter: drop-shadow(0 0 20px rgb(0 0 0/50%));
+}
+
+figure:before {
+  background-image: url(https://assets.codepen.io/1480814/necro-back.jpg);
+}
+
+figure + figure:before {
+  background-image: url(https://assets.codepen.io/1480814/druid-bac.jpg);
+}
 ```
 
 ## 3D Card Effect[](#3d-card-effect)
