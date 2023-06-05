@@ -21,6 +21,8 @@ All animations were inspired and implemented by CodePen.
   - [3D Thumb Image Effect](#3d-thumb-image-effect)
     - [Book Effect](#book-effect)
     - [Shadow Effect](#shadow-effect)
+  - [Image Caption v1](#image-caption-v1)
+    - [Caption Animation](#caption-animation-1)
 
 ## Table of contents[](#table-of-contents)
 - 3D Card
@@ -283,5 +285,29 @@ This project implemented multiple sliders animation using CSS.
   opacity: 1;
   box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
   transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+```
+
+## Image Caption v1[](#image-caption-v1)
+<img align="center" src="/screenshot/Image_Caption_v1/Screenshot.jpg" alt="Image Caption v1" style="width:100%;height:100%"/>
+
+### Caption Animation
+```
+figure.caption::after {
+  content: "";
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0.75;
+  transform: skew(-45deg) scaleX(0);
+  transition: 0.3s ease-in-out;
+}
+
+figure.caption:hover::after {
+  transform: skew(-45deg) scaleX(1);
+  transition: all 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 ```
