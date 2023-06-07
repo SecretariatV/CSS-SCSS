@@ -23,6 +23,8 @@ All animations were inspired and implemented by CodePen.
     - [Shadow Effect](#shadow-effect)
   - [Image Caption v1](#image-caption-v1)
     - [Caption Animation](#caption-animation-1)
+  - [Image Caption v2](#image-caption-v2)
+    - [Caption Animation](#caption-animation-2)
 
 ## Table of contents[](#table-of-contents)
 - 3D Card
@@ -309,5 +311,32 @@ figure.caption::after {
 figure.caption:hover::after {
   transform: skew(-45deg) scaleX(1);
   transition: all 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+```
+
+## Image Caption v2[](#image-caption-v2)
+<img align="center" src="/screenshot/Image_Caption_v2/Screenshot.jpg" alt="Image Caption v2" style="width:100%;height:100%"/>
+
+### Caption Animation
+```
+.caption::before,
+.caption::after {
+  height: 10px;
+  width: 0%;
+}
+
+.caption::before {
+  top: 0;
+  left: 0;
+}
+
+.caption::after {
+  bottom: 0;
+  right: 0;
+}
+
+.caption:hover::before,
+.caption:hover::after {
+  width: 100%;
 }
 ```
