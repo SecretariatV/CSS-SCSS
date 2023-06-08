@@ -1,0 +1,117 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #212121;
+}
+
+.caption {
+  position: relative;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+  box-shadow: none !important;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  margin: 7px;
+  padding: 6px;
+}
+
+.caption img {
+  width: 100%;
+  vertical-align: top;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.caption .border {
+  position: absolute;
+  opacity: 0.45;
+}
+
+.caption .border::before,
+.caption .border::after,
+.caption .border div::before,
+.caption .border div::after {
+  content: "";
+  background-color: #f4b043;
+  position: absolute;
+  display: block;
+  transition: all 0.4s ease-in-out;
+}
+
+.caption .border::before,
+.caption .border::after {
+  width: 0;
+  height: 1px;
+}
+
+.caption .border div::before,
+.caption .border div::after {
+  width: 1px;
+  height: 0;
+}
+
+.caption .border.one {
+  left: 0;
+  top: 0;
+  right: 12px;
+  bottom: 12px;
+}
+
+.caption .border.one::before,
+.caption .border.one div::before {
+  left: 0;
+  top: 0;
+}
+
+.caption .border.one::after,
+.caption .border.one div::after {
+  bottom: 0;
+  right: 0;
+}
+
+.caption .border.two {
+  left: 12px;
+  top: 12px;
+  right: 0;
+  bottom: 0;
+}
+
+.caption .border.two:before,
+.caption .border.two div:before {
+  right: 0;
+  top: 0;
+}
+
+.caption .border.two:after,
+.caption .border.two div:after {
+  bottom: 0;
+  left: 0;
+}
+
+.caption a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.caption:hover .border::before,
+.caption:hover .border::after {
+  width: 100%;
+}
+
+.caption:hover .border div::before,
+.caption:hover .border div::after {
+  height: 100%;
+}
