@@ -25,6 +25,7 @@ All animations were inspired and implemented by CodePen.
     - [Caption Animation](#caption-animation-1)
   - [Image Caption v2](#image-caption-v2)
     - [Caption Animation](#caption-animation-2)
+  - [Image Caption v2](#image-caption-v2-1)
 
 ## Table of contents[](#table-of-contents)
 - 3D Card
@@ -340,3 +341,6 @@ figure.caption:hover::after {
   width: 100%;
 }
 ```
+
+## Image Caption v2[](#image-caption-v2)
+<img align="center" src="/screenshot/Image_Caption_v3/Screenshot.jpg" alt="Image Caption v3" style="width:100%;height:100%"/>
