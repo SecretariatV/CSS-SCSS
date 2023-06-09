@@ -34,8 +34,8 @@ All animations were inspired and implemented by CodePen.
 - 3D Card
 
 ## 3D Card[](#3d-card)
-<div style="display:flex;align-items:center;justify-content:center;">
-  <img align="center" src="/screenshot/3D_Card/screenshot.jpg" alt="3D Card" style="width:30%;height:30%"/>
+<div style="display:flex;align-items:center;justify-content:center;width:100%;">
+  <img align="center" src="/screenshot/3D_Card/screenshot.jpg" alt="3D Card" style="width:50%;height:50%"/>
 </div>
 This project is a project that implements a 3D card using CSS.
 
