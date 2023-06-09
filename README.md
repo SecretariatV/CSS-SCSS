@@ -350,7 +350,7 @@ figure.caption:hover::after {
 
 
 ## Border Effect[](#border-effect)
-<img align="center" src="/screenshot/Border_Effect/Screenshot.jpg" alt="Border Effect" style="width:100%;height:100%"/>
+<img align="center" src="/screenshot/Border_Effect/Screenshot.jpg" alt="Border Effect" style="width:40%;height:40%"/>
 This project uses Vanilla CSS to apply a floating border effect to image.
 
 ### Border Animation
