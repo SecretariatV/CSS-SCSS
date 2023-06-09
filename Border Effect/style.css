@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+
+body {
+  background: #003;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.box {
+  width: 60vmin;
+  height: 60vmin;
+  border: 1px dashed rgba(255, 255, 255, 0.4);
+  position: relative;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  border: 1px dashed rgba(255, 255, 255, 0.4);
+  transform: scale(1.42);
+}
+
+.spin-container {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: spin 12s linear infinite;
+  animation: spin 12s linear infinite;
+  position: relative;
+}
+
+.shape {
+  width: 100%;
+  height: 100%;
+  transition: border-radius 1s ease-out;
+  -webkit-animation: morph 8s ease-in-out infinite both alternate;
+  animation: morph 8s ease-in-out infinite both alternate;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.bd {
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  left: -10%;
+  top: -10%;
+  background: url("img/1.jpg");
+  background-size: 100%;
+  background-position: center -9%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: spin 12s linear infinite reverse;
+  z-index: 2;
+}
+
+@-webkit-keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40%/60% 30% 70% 40%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40%/60% 30% 70% 40%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
