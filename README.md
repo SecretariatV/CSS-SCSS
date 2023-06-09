@@ -34,7 +34,9 @@ All animations were inspired and implemented by CodePen.
 - 3D Card
 
 ## 3D Card[](#3d-card)
-<img align="center" src="/screenshot/3D_Card/screenshot.jpg" alt="3D Card" style="width:100%;height:100%"/>
+<div style="display:flex;align-items:center;justify-content:center;">
+  <img align="center" src="/screenshot/3D_Card/screenshot.jpg" alt="3D Card" style="width:30%;height:30%"/>
+</div>
 This project is a project that implements a 3D card using CSS.
 
 ### CSS
@@ -48,7 +50,9 @@ This project is a project that implements a 3D card using CSS.
 ```
 
 ## 3D Carousel[](#3d-carousel)
-<img align="center" src="/screenshot/3D_Carousel/Carousel.jpg" alt="3D_Carousel" style="width:100%;height:100%"/>
+<div style="display:flex;align-items:center;justify-content:center;">
+  <img align="center" src="/screenshot/3D_Carousel/Carousel.jpg" alt="3D_Carousel" style="width:30%;height:30%"/>
+</div>
 This project is a project that implements the image carousel effect using CSS and JavaScript.
 
 ### Start Effect
@@ -350,7 +354,9 @@ figure.caption:hover::after {
 
 
 ## Border Effect[](#border-effect)
-<img align="center" src="/screenshot/Border_Effect/Screenshot.jpg" alt="Border Effect" style="width:40%;height:40%"/>
+<div style="display:flex;align-items:center;justify-content:center;">
+  <img align="center" src="/screenshot/Border_Effect/Screenshot.jpg" alt="Border Effect" style="width:30%;height:30%"/>
+</div>
 This project uses Vanilla CSS to apply a floating border effect to image.
 
 ### Border Animation
