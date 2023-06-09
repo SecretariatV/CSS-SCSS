@@ -228,7 +228,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 ```
 
 ## 3D Image Hover[](#3d-image-hover)
-<img align="center" src="/screenshot/3D_Image_Hover/3DImageHover.jpg" alt="3D Image Hover" style="width:100%;height:70%"/>
+<img align="center" src="/screenshot/3D_Image_Hover/3DImageHover.jpg" alt="3D Image Hover" style="width:50%;height:50%"/>
 This project implemented multiple sliders animation using CSS.
 
 ### Animation
