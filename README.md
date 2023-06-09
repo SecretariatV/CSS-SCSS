@@ -34,7 +34,9 @@ All animations were inspired and implemented by CodePen.
 - 3D Card
 
 ## 3D Card[](#3d-card)
-<img align="center" src="/screenshot/3D_Card/screenshot.jpg" alt="3D Card" style="width:100%;height:100%"/>
+<div style="display:flex;align-items:center;justify-content:center;width:100%;">
+  <img align="center" src="/screenshot/3D_Card/screenshot.jpg" alt="3D Card" style="width:50%;height:50%"/>
+</div>
 This project is a project that implements a 3D card using CSS.
 
 ### CSS
@@ -48,7 +50,9 @@ This project is a project that implements a 3D card using CSS.
 ```
 
 ## 3D Carousel[](#3d-carousel)
-<img align="center" src="/screenshot/3D_Carousel/Carousel.jpg" alt="3D_Carousel" style="width:100%;height:100%"/>
+<div style="display:flex;align-items:center;justify-content:center;">
+  <img align="center" src="/screenshot/3D_Carousel/Carousel.jpg" alt="3D_Carousel" style="width:50%;height:50%"/>
+</div>
 This project is a project that implements the image carousel effect using CSS and JavaScript.
 
 ### Start Effect
@@ -117,7 +121,7 @@ document.onpointerdown = function (e) {
 ```
 
 ## 3D Card Hover[](#3d-card-hover)
-<img align="center" src="/screenshot/3D_Card_Hover/Screenshot.jpg" alt="3D Card Hover" style="width:100%;height:100%"/>
+<img align="center" src="/screenshot/3D_Card_Hover/Screenshot.jpg" alt="3D Card Hover" style="width:50%;height:50%"/>
 This project shows 3D animation using characters.
 
 ### Caption Animation
@@ -163,7 +167,7 @@ figure + figure:before {
 ```
 
 ## 3D Card Effect[](#3d-card-effect)
-<img align="center" src="/screenshot/3D_Card_Effect/3D_Card_Effect.jpg" alt="3D Card Effect" style="width:100%;height:100%"/>
+<img align="center" src="/screenshot/3D_Card_Effect/3D_Card_Effect.jpg" alt="3D Card Effect" style="width:50%;height:50%"/>
 This project is a project that shows a 3D card using mouse events.
 
 ### Add mouse event listener
@@ -224,7 +228,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 ```
 
 ## 3D Image Hover[](#3d-image-hover)
-<img align="center" src="/screenshot/3D_Image_Hover/3DImageHover.jpg" alt="3D Image Hover" style="width:100%;height:100%"/>
+<img align="center" src="/screenshot/3D_Image_Hover/3DImageHover.jpg" alt="3D Image Hover" style="width:50%;height:50%"/>
 This project implemented multiple sliders animation using CSS.
 
 ### Animation
@@ -350,7 +354,9 @@ figure.caption:hover::after {
 
 
 ## Border Effect[](#border-effect)
-<img align="center" src="/screenshot/Border_Effect/Screenshot.jpg" alt="Border Effect" style="width:100%;height:100%"/>
+<div style="display:flex;align-items:center;justify-content:center;">
+  <img align="center" src="/screenshot/Border_Effect/Screenshot.jpg" alt="Border Effect" style="width:30%;height:30%"/>
+</div>
 This project uses Vanilla CSS to apply a floating border effect to image.
 
 ### Border Animation
