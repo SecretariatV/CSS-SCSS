@@ -26,6 +26,9 @@ All animations were inspired and implemented by CodePen.
   - [Image Caption v2](#image-caption-v2)
     - [Caption Animation](#caption-animation-2)
   - [Image Caption v2](#image-caption-v2-1)
+  - [Border Effect](#border-effect)
+    - [Border Animation](#border-animation)
+    - [Image Effect](#image-effect-1)
 
 ## Table of contents[](#table-of-contents)
 - 3D Card
@@ -344,3 +347,73 @@ figure.caption:hover::after {
 
 ## Image Caption v2[](#image-caption-v2)
 <img align="center" src="/screenshot/Image_Caption_v3/Screenshot.jpg" alt="Image Caption v3" style="width:100%;height:100%"/>
+
+
+## Border Effect[](#border-effect)
+<img align="center" src="/screenshot/Border_Effect/Screenshot.jpg" alt="Border Effect" style="width:100%;height:100%"/>
+This project uses Vanilla CSS to apply a floating border effect to image.
+
+### Border Animation
+```
+@-webkit-keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40%/60% 30% 70% 40%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40%/60% 30% 70% 40%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
+}
+
+.shape {
+  width: 100%;
+  height: 100%;
+  transition: border-radius 1s ease-out;
+  -webkit-animation: morph 8s ease-in-out infinite both alternate;
+  animation: morph 8s ease-in-out infinite both alternate;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 5;
+}
+```
+
+### Image Effect
+To fix the image, the same effect is applied to the image and the border container.
+```
+.bd {
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  left: -10%;
+  top: -10%;
+  background: url("img/1.jpg");
+  background-size: 100%;
+  background-position: center -9%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: spin 12s linear infinite reverse;
+  z-index: 2;
+}
+
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+```
