@@ -31,6 +31,10 @@ All animations were inspired and implemented by CodePen.
     - [Image Effect](#image-effect-1)
   - [Button Effect (Simple)](#button-effect-simple)
     - [Line Hover Effect](#line-hover-effect)
+  - [Button Effect (Simple)](#button-effect-simple-1)
+    - [Glow Button](#glow-button)
+      - [Neon Animation](#neon-animation)
+      - [Glow Effect](#glow-effect)
 
 ## Table of contents[](#table-of-contents)
 - 3D Card
@@ -455,4 +459,50 @@ HTML
   <polyline class="bg-line" points="179,1 179,59 1,59 1,1 179,1" />
   <polyline class="hi-line" points="179,1 179,59 1,59 1,1 179,1" />
 </svg>
+```
+
+## Button Effect (Simple)[](#button-effect-simple)
+<img align="center" src="/screenshot/Button_Effect_Simple/Screenshot.jpg" alt="Button Effect Simple" style="width:100%;height:100%"/>
+This project is using Vanilla CSS to 3D effect.
+
+### Glow Button
+
+#### Neon Animation
+```
+@keyframes border-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 1;
+  }
+  3% {
+    opacity: 0.1;
+  }
+  8% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+```
+
+#### Glow Effect
+```
+.glowing-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  filter: blur(1em);
+  background: var(--glow-color);
+  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+  pointer-events: none;
+}
 ```
