@@ -29,6 +29,8 @@ All animations were inspired and implemented by CodePen.
   - [Border Effect](#border-effect)
     - [Border Animation](#border-animation)
     - [Image Effect](#image-effect-1)
+  - [Button Effect (Simple)](#button-effect-simple)
+    - [Line Hover Effect](#line-hover-effect)
 
 ## Table of contents[](#table-of-contents)
 - 3D Card
@@ -422,4 +424,35 @@ To fix the image, the same effect is applied to the image and the border contain
     transform: rotate(1turn);
   }
 }
+```
+
+## Button Effect (Simple)[](#button-effect-simple)
+<img align="center" src="/screenshot/Button_Effect_Simple/Screenshot.jpg" alt="Button Effect Simple" style="width:100%;height:100%"/>
+This project is collections of simple effects of Button hovers.
+
+### Line Hover Effect
+CSS
+```
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn-one .btn:hover svg {
+  stroke-dashoffset: -480;
+}
+```
+
+HTML
+```
+<svg>
+  <polyline class="bg-line" points="179,1 179,59 1,59 1,1 179,1" />
+  <polyline class="hi-line" points="179,1 179,59 1,59 1,1 179,1" />
+</svg>
 ```
